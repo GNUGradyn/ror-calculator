@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>ROR Calculator</title>
+		<link rel="stylesheet" href="stylesheet.css">
+    <script src="main.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<h1><span style="color: #4dbdec;">Alder</span> ROR Calculator</h1>
+      <h3>This is an UNOFFICIAL tool by Gradyn Wursten, message me on teams for problems/suggestions!</h3>
+		</div>
+    <div id="InstallType" class="card">
+			<h2>Professional Install?</h2>
+			<input type="checkbox" onchange="process_ror()">
+		</div>
+			<div id="state" class="card optional">
+				<h2>State</h2>
+				<select id="state-dropdown">
+          <option value="none">Select a State</option>
+				</select>
+				<p>or</p>
+				<input id="state-textbox" placeholder="Enter State Name or State Code">
+			</div>
+		<div id="age" onkeyup="process_ror()" class="card optional">
+			<h2>Customer Age</h2>
+			<input placeholder="age">
+		</div>
+		<div id="assisted" onchange="process_ror()" class="card optional">
+			<h2>Assisted Living?</h2>
+			<input type="checkbox">
+		</div>
+    <div id="InstallDate" class="card" onchange="process_ror()">
+			<h2>Install Date (optional)</h2>
+			<input type="date">
+		</div>
+    <div id="output" class="card">
+      <h1>30 days</h1>
+      <h3 id="subtext"></h3>
+	  <h3 id="accounting-for"></h3>
+    </div>
+	</body>
+</html>
